@@ -24,10 +24,9 @@ public:
                 TreeNode *curr=q.front();
                 q.pop();
                 TreeNode *temp=0;
-                    temp=curr->left;
-                
-                    curr->left=curr->right;
-                    curr->right=temp;
+                temp=curr->left;
+                curr->left=curr->right;
+                curr->right=temp;
                 if(curr->left)
                   q.push(curr->left); 
                 if(curr->right)
