@@ -5,11 +5,7 @@ public:
     int n = 0;
     int ans = 0;
     int sum;
-    
     sort(v.begin(), v.end());
-    // while (v.size() <= 3) {
-    //     return accumulate(v.begin(), v.end(), 0);
-    // }
     n = v.size();
     ans = v[0] + v[1] + v[2];
     for (int i = 0; i < n-2; i++) {
